@@ -1,0 +1,185 @@
+<!--<form action="uploadFile.php" method="post"-->
+<!--enctype="multipart/form-data">-->
+<!--<label for="file">Filename:</label>-->
+<!--<input type="file" name="file" id="file" /> -->
+<!--<br />-->
+<!--<input type="submit" name="submit" value="Submit" />-->
+<!--</form>-->
+
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css" />
+</head>
+
+<body>
+    <script>
+        function game() {
+            location.assign("gamer.html")
+        }
+        function gif() {
+            location.assign("gif.rar")
+        }
+        function movie() {
+            location.assign("movie.html")
+        }
+        function uploadfiles(){
+            location="upload.html";
+        }
+        function uploadfiles2(){
+            location="upload2.html";
+        }
+        function noExperiment(){
+            alert("亲，这次的实验还没做");
+        }
+        function underdevelopment(){
+            alert("开发中，再等等");
+        }
+        function noExam(){
+            alert("亲，还没有考试哦")
+        }
+        function Announcement(){
+            location.assign("Announcement.pdf")
+        }
+    </script>
+    <style type="text/css">
+        .file {
+            position: relative;
+            /*绝对定位!*/
+            display: inline-block;
+            /*设置为行内元素*/
+            background: #D0EEFF;
+            border: 1px solid #99D3F5;
+            border-radius: 4px;
+            padding: 4px 12px;
+            overflow: hidden;
+            color: #1E88C7;
+            text-decoration: none;
+            text-indent: 0;
+            line-height: 20px;
+        }
+
+        .file input {
+            position: absolute;
+            /*相对定位*/
+            right: 0;
+            top: 0;
+            opacity: 0;
+            /*将上传组件设置为透明的*/
+            font-size: 100px;
+        }
+
+        .file:hover {
+            background: #AADDFF;
+            border-color: #78C3F3;
+            color: #004974;
+            text-decoration: none;
+        }
+
+        .filex {
+            display:inline-block;
+        }
+    </style>
+    <main>
+        <section class="glass">
+            <div class="dashboard">
+                <div class="links">
+                    <div class="link">
+                        <h3>function:</h3>
+                        <p></p>
+                    </div>
+                    <div class="link">
+                        <img src="./images/gonggaotongzhi.png" alt="" class="" style="width: 60px;height:60px;" onclick="Announcement()">
+
+                        <h2>Notice</h2>
+                    </div>
+                    <div class="link">
+                        <img src="./images/zuoyetijiao.png" alt="" class="" style="width: 50px;height:50px;" onclick="underdevelopment()">
+                        <h2>Handing</h2>
+                    </div>
+                    <div class="link">
+                        <img src="./images/chengjichaxun.png" alt="" class="" style="width: 60px;height:60px;" onclick="noExam()">
+                        <h2>Sorces</h2>
+                    </div>
+                    <div class="link">
+                        <h3>click to download:</h3>
+                        <p></p>
+                    </div>
+                    <div class="link">
+                        <img src="./images/guanyubenzhan.png" onclick="gif()" alt="" class=""
+                            style="width: 60px;height:60px;">
+                        <h2 onclick="gif()">Gif</h2>
+                    </div>
+
+                    <div class="link">
+                        <img src="./images/controller.png" onclick="game()" alt="" class=""
+                            style="width: 60px;height:60px;">
+                        <h2 onclick="game()">Games</h2>
+                    </div>
+                    <div class="link">
+                        <img src="./images/gonggao.png" onclick="movie()" alt="" class=""
+                            style="width: 60px;height:60px;">
+                        <h2 onclick="movie()">Movie</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="xinanzhijia">
+                <div class="status">
+                    <h1>信安之家</h1>
+                    <input type="text" placeholder='click to search'>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./images/tijiao.png" alt="" class="" style="width: 60px;height:60px;" onclick="uploadfiles()">
+                            <div class="card-info">
+                                <h2>数字逻辑第一次实验报告</h2>
+                                <p>ddl：11月20日</p>
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/tijiao.png" alt="" class="" style="width: 60px;height:60px;" onclick="uploadfiles2()">
+                            <div class="card-info">
+                                <h2>数字逻辑第二次实验报告</h2>
+                                <p>ddl11月30日</p>
+                                <div class="progress"></div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <img src="./images/tijiao.png" alt="" class="" style="width: 60px;height:60px;" onclick="noExperiment()">
+                            <div class="card-info">
+                                <h2>数字逻辑第三次实验报告</h2>
+                                <p>ddl：月 日</p>
+                                
+                                <div class="progress"></div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <img src="./images/tijiao.png" alt="" class="" style="width: 60px;height:60px;" onclick="noExperiment()">
+                            <div class="card-info">
+                                <h2>数字逻辑第四次实验报告</h2>
+                                <p>ddl：月 日</p>
+                                
+                                <div class="progress"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+</body>
+
+</html>

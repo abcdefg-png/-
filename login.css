@@ -1,0 +1,140 @@
+/* login.css */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+h2,
+p {
+ /* color: #658ec6;*/
+  font-weight: 500;
+  opacity: 0.8;
+  text-align: center;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+  text-align: center;
+}
+main{
+  min-height:100vh; /*让颜色充满整个屏幕*/
+  background:linear-gradient(to right top,#65dfc9,#6cdbed); /*背景是两种颜色混合，从左下到右上渐变*/
+  display:flex;
+  align-items:center;/*上下居中*/
+  justify-content:center; /*水平居中*/
+  font-family: "Poppins", sans-serif;
+}
+
+.glass{
+  background:white;
+  min-height: 80vh;
+  width:70%;
+  background:linear-gradient(
+      to right bottom,
+  rgba(255,255,255,0.7),    /*左上角0.7透明度*/
+  rgba(255,255,255,0.3));   /*右下角0.3透明度*/
+  border-radius:2rem;      /*圆角处理*/
+  z-index:2; /*上下层级关系，数值高的可以覆盖数值低的*/
+  backdrop-filter: blur(2rem);   /*毛玻璃效果*/
+ display:flex;
+}
+.circle1, .circle2{
+  background:white;
+  background:linear-gradient(
+      to right bottom,
+  rgba(255,255,255,0.8),    
+  rgba(255,255,255,0.3)); 
+  height:15rem;
+  width: 15rem;
+  position :absolute;
+  border-radius:50%;    /*变成球形*/
+}
+.circle1{       /*circle1的位置调整*/
+  top:5%;
+  right:8%;
+}
+.circle2{
+  bottom:5%;
+  left:10%;
+}
+.dashboard{
+  flex:1; /*信安之家右移动*/
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-evenly; /*上下居中*/
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+  border-radius: 2rem;
+}
+.link{
+  display:flex;
+  margin:2rem 0rem; /*图标间距*/
+  padding:1rem 5rem;
+  align-items:center;
+}
+.link h2{
+  padding:0rem 2rem;
+}
+.xinanzhijia{
+  flex:2;    /*上下顶到边了*/
+}
+
+.status input{
+  background: linear-gradient(
+  to right bottom,
+  rgba(255, 255, 255, 0.7),
+  rgba(255, 255, 255, 0.3)
+);
+border: none;
+width: 50%;
+padding: 0.5rem;
+border-radius: 2rem;
+}
+.xinanzhijia{
+  margin:5rem;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+}
+.card{
+  display:flex;
+  background: linear-gradient(
+  to left top,
+  rgba(255, 255, 255, 0.8),
+  rgba(255, 255, 255, 0.5)
+);
+border-radius:1rem;
+margin:2rem 0rem;
+padding:2rem;
+box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+justify-content: space-between;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input::-ms-input-placeholder {        /*输入框内的文字居中*/
+  text-align: center;
+  font-size: 15px;
+}
+input::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 15px;
+}
+.submit{
+  padding: 15px;
+  background-color: coral;
+}
